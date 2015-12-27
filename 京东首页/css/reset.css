@@ -1,0 +1,32 @@
+body,
+ul,
+dd,
+dl,
+h3,
+h2,
+input {
+	margin: 0;
+	padding: 0;
+}
+.clr:after {
+	display: block;
+	content: "";
+	clear: both;
+}
+.clr {
+	*zoom: 1;
+}
+li {
+	list-style: none;
+}
+img{
+	border: 0;
+	vertical-align: middle;
+}
+i{
+	font-style: normal;
+}
+h2,h3{
+	font-family: "microsoft yahei";
+	font-weight: 400;
+}
