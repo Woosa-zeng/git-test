@@ -1,0 +1,1052 @@
+/*header*/
+.frame-top {
+	width: 100%;
+	border-bottom: 1px solid #ddd;
+	min-width: 960px;
+	height: 143px;
+}
+.frame-top .header-top {
+	height: 30px;
+	background: #2f2f2f;
+}
+.frame-top .header-top .navlist {
+	position: relative;
+	width: 960px;
+	margin: 0 auto;
+	height: 30px;
+	text-align: right;
+	font-family: Arial, 'Times New Roman', 'Microsoft YaHei', SimHei;
+}
+.frame-top .header-top ul {
+	position: absolute;
+	right: 0;
+	display: inline-block;
+}
+.frame-top .header-top li {
+	display: inline-block;
+	float: left;
+	cursor: pointer;
+	height: 30px;
+	line-height: 30px;
+}
+.frame-top .header-top p{
+	display: inline-block;
+}
+.frame-top .header-top .navlist .line {
+	float: left;
+	display: inline-block;
+	width: 1px;
+	line-height: 100%;
+	height: auto;
+	overflow: hidden;
+	margin: 0 10px;
+	margin-top: 9px;
+	background: #3d3d3d;
+	zoom: 1;
+}
+.frame-top .main-top {
+	width: 960px;
+	height: 112px;
+	position: relative;
+	margin: 0 auto;
+}
+.frame-top .main-top .frame-logo {
+	position: absolute;
+	top: 0;
+	left: -110px;
+	margin: 0;
+	width: 295px;
+	height: 113px;
+	background: #fff url(../img/frame_logo_min.png) no-repeat;
+}
+.frame-top .main-top .navigation {
+	position: absolute;
+	left: 238px;
+	top: 0;
+	width: 480px;
+	height: 75px;
+	overflow: hidden;
+}
+.frame-top .main-top .frame-search {
+	position: absolute;
+	top: 38px;
+	right: -4px;
+	z-index: 2;
+	width: 228px;
+	height: 39px;
+	background: url(../img/frame_bg.png) 0 -161px no-repeat;
+}
+.frame-top .main-top .frame-search input {
+    position: absolute;
+    top: 7px;
+    right: 31px;
+    width: 189px;
+    height: 24px;
+    border: 0;
+    color: #515151;
+    line-height: 20px;
+}
+.frame-top .main-top li.nav-home {
+	width: 88px;	
+}
+.frame-top .main-top li.nav-mv {
+	width: 58px;	
+}
+.frame-top .main-top li.nav-mymusic {
+	width: 89px;	
+}.frame-top .main-top li.nav-software {
+	width: 108px;	
+}
+.frame-top .main-top li {
+	width: 75px;
+	padding-right: 8px;
+	float: left;
+}
+.frame-top .main-top .navigation li a{
+	background: url(../img/frame_bg.png);
+	display: block;
+	height: 75px;
+	outline: none;
+}
+.frame-top .main-top .navigation .nav-mv a{
+	background-position: -101px -79px;
+}
+.frame-top .main-top .navigation .nav-mymusic a{
+	background-position: -166px -79px;
+}
+.frame-top .main-top .navigation .nav-software a{
+	background-position: -267px -79px;
+}
+.frame-top .main-top .navigation li a:hover span{
+	background: transparent;
+}
+.frame-top .main-top .navigation .nav-home span{
+	display: none;
+}
+.frame-top .main-top .navigation span {
+	display: block;
+	height: 6px;
+	font-size: 0;
+	overflow: hidden;
+	background: #fff;	
+}
+.frame-top .sub-navigation {
+	position: absolute;
+	top: 85px;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1;
+	color: #c5c5c5;
+}
+#ul1{
+	width: 510px;
+	height: 115px;
+}
+.frame-top .sub-navigation p {
+	display: block;
+}
+.frame-top .sub-navigation .sub-lib {
+	margin-left: 244px;
+}
+.frame-top .sub-navigation .sub-lib a.nonce{
+	color: #0dad51;
+	font-weight: bold;
+}
+.frame-top .sub-navigation p a {
+	color: #6e6e6e;
+	font-size: 14px;
+	padding: 0 15px;
+}
+.frame-top .sub-navigation p.sub-mv {
+	display: none;
+	margin-left: 336px;
+}
+.frame-top .sub-navigation p.sub-my-music {
+	display: none;
+	margin-left: 290px;
+}
+/* main 焦点图*/
+.main {
+	width: 960px;
+	padding: 20px 0;
+	margin: 0 auto;
+}
+.main .main-container {
+	width: 700px;
+	margin-right: 40px;
+	float: left;
+}
+.main .main-container .mod-focus-show {
+	width: 700px;
+	height: 280px;
+	position: relative;
+	margin: 0 0 40px;
+}
+.main .main-container .mod-focus-show .slide-prev {
+	width: 35px;
+	height: 70px;
+	opacity: .2;
+	background: url(../img/mod_focus_show.png) -999px -999px no-repeat;
+	position: absolute;
+	top: 50%;
+	text-indent: -99em;
+	margin-top: -35px;
+	overflow: hidden;
+	z-index: 12;
+	left: 0;
+	background-position: 0 0;
+}
+.main .main-container .mod-focus-show .slide-next {
+	width: 35px;
+	height: 70px;
+	opacity: .2;
+	background: url(../img/mod_focus_show.png) -999px -999px no-repeat;
+	position: absolute;
+	top: 50%;
+	text-indent: -99em;
+	margin-top: -35px;
+	overflow: hidden;
+	z-index: 12;
+	right: 0;
+	background-position: -40px 0;
+}
+.main .main-container .mod-focus-show .slide-prev:hover {
+	opacity: .5;
+}
+.main .main-container .mod-focus-show .slide-next:hover {
+	opacity: .5;
+}	
+.main .main-container .mod-focus-show ul {
+	display: block;
+	width: 700px;
+	height: 280px;
+}
+.main .main-container .mod-focus-show ul li {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 700px;
+	height: 280px;
+}
+.main .main-container .mod-focus-show ul li a {
+	display: block;
+	width: 700px;
+	height: 280px;
+}
+.main .mod-focus-show .focus-switch {
+	font-style: 0;
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	margin-left: -369px;
+	line-height: 0;
+	width: 738px;
+	height: 10px;
+	text-align: center;
+	z-index: 11;
+	overflow: hidden;
+}
+.main .mod-focus-show .focus-switch a.switch1 {
+	opacity: 1;
+}
+.main .mod-focus-show .focus-switch a{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	margin: 0 4px;
+	background-color: #fff;
+	font-style: 0;
+	overflow: hidden;
+	border-radius: 100%;
+	opacity: .4;
+}
+.main .mod-focus-show .focus-switch a:hover {
+	opacity: 1;
+}
+/*在线首发*/
+.main .mod-first {
+	width: 700px;
+	overflow: hidden;
+	position: relative;
+	margin: 0 0 38px;
+}
+.main .mod-first .title {
+	height: 26px;
+	padding: 2px 0;
+	overflow: hidden;
+	margin: 0 0 18px;
+	border-left: 5px solid  #f00;
+}
+.main .mod-first .title h2 {
+	background: url(../img/index_title_bg.png) 10px 0 no-repeat;
+	height: 26px;
+	text-indent: -9999px;
+	overflow: hidden;
+}
+.main .mod-first .mod-more {
+	left: 135px;
+	top: 13px;
+}
+.main .mod-first .mod-cp {
+	position: absolute;
+	right: 0;
+	top: 0;
+	text-align: right;
+	font-size: 0;
+}
+.main .mod-first .mod-cp a {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	background: url(../img/icon_sprite.png) no-repeat;
+}
+.main .mod-first .mod-cp a.cp-prev {
+	background-position: -32px -96px;
+}
+.main .mod-first .mod-cp a.cp-next {
+	background-position: 0 -129px;
+}
+.main .mod-first .mod-content {
+	width: 700px;
+	overflow: hidden;
+}
+.main .mod-first .mod-content .slide-content {
+	width: 2130px;
+	height: 270px;
+	overflow: hidden;
+}
+.main .mod-first .mod-content ul {
+	width: 710px;
+	height: 270px;
+	float: left;
+	overflow: hidden;
+}
+.main .mod-first .mod-content ul li {
+	width: 130px;
+	height: 130px;
+	margin: 0 12px 10px 0;
+	float: left;
+}
+.main .mod-first .mod-content a {
+	display: block;
+	position: relative;
+	width: 130px;
+	height: 130px;
+}
+.main .mod-first .mod-content img {
+	display: block;
+	width: 130px;
+	height: 130px;
+}
+.main .mod-first .mod-content .shadow {
+	display: block;
+	width: 130px;
+	height: 48px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: 1;
+	background: #000;
+	opacity: .75;
+	cursor: pointer;
+}
+.main .mod-first .mod-content strong {
+	display: block;
+	width: 130px;
+	height: 20px;
+	position: absolute;
+	z-index: 2;
+	left: 0;
+	font-weight: normal;
+	cursor: pointer;
+	text-indent: 5px;
+	overflow: hidden;
+	white-space: nowrap;
+	-ms-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+}
+.main .mod-first .mod-content .album-name {
+	height: 28px;
+	line-height: 28px;
+	bottom: 20px;
+	color: #0cc65b;
+	font-size: 14px;
+}
+.main .mod-first .mod-content .album-singer {
+	line-height: 18px;
+	bottom: 0;
+	color: #fff;
+}
+/*MV首播*/
+.main .mod-mv {
+	width: 700px;
+	overflow: hidden;
+	position: relative;
+	margin: 0 0 10px;
+}
+.main .mod-mv .title {
+	height: 26px;
+	padding: 2px 0;
+	overflow: hidden;
+	margin: 0 0 18px;
+	border-left: 5px solid #ff7800;
+}
+.main .mod-mv .title h2 {
+	height: 26px;
+	text-indent: -999px;
+	overflow: hidden;
+	background: url(../img/index_title_bg.png) 10px -26px no-repeat;
+}
+.main .mod-mv .mod-more {
+	left: 120px;
+	top: 13px;
+}
+.main .mod-mv .mod-content {
+	width: 700px;
+	overflow: hidden;
+}
+.main .mod-mv .mod-content .slide-content {
+	width: 2160px;
+}
+.main .mod-mv .mod-content ul {
+	width: 720px;
+	float: left;
+	overflow: hidden;
+}
+.main .mod-mv .mod-content ul li {
+	width: 160px;
+	height: 184px;
+	float: left;
+	margin: 0 20px 0 0;
+}
+.main .mod-mv .mod-content ul li .mv-160 {
+	margin: 0 0 6px;
+	display: block;
+	width: 160px;
+	height: 90px;
+	position: relative;
+}
+.main .mod-mv .mod-content img {
+	display: block;
+	width: 160px;
+	height: 90px;
+}
+.main .mod-mv .mod-content .icon-play {
+	display: none;
+}
+.main .mod-mv .mod-content ul li a:hover .icon-play {
+	display: block;
+	cursor: pointer;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	right: 5px;
+	bottom: 5px;
+	background: url(../img/icon_play.png) 0 0 no-repeat;
+}
+.main .mod-mv .mod-content ul li a .icon-play:hover {
+	background: url(../img/icon_play.png) -20px 0 no-repeat;
+}
+.main .mod-mv .mod-content p {
+	line-height: 20px;
+	height: 20px;
+	width: 160px;
+	margin-top: 3px;
+	-ms-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.main .mod-mv .mod-content ul li p a.mv-name {
+	line-height: 20px;
+	height: 20px;
+	color: #0c8f44;
+}
+.main .mod-mv .mod-content ul li p a.mv-name:hover {
+	color: #05b600;
+}
+.main .mod-mv .mod-content p .count {
+	color: #a3a3a3;
+	background: url(../img/singer_bg.png) -56px -222px no-repeat;
+	text-indent: 14px;
+	float: left;
+	width: 80px;
+	overflow: hidden;
+}
+.main .mod-mv .mod-content p .date {
+	color: #a3a3a3;
+	float: right;
+	width: 70px;
+	text-align: right;
+	overflow: hidden;
+}
+/*官方推荐*/
+.main .mod-recommend {
+	width: 700px;
+	overflow: hidden;
+}
+.main .mod-recommend .new-recommend {
+	width: 333px;
+	float: left;
+	position: relative;
+	padding: 0 17px 0 0;
+	z-index: 2;
+	border-right: 1px solid  #e5e5e5;
+}
+.main .mod-recommend .title {
+	height: 26px;
+	padding: 2px 0;
+	overflow: hidden;
+	margin: 0 0 17px;
+	border-left: 5px solid  #0dad51;
+}
+.main .mod-recommend .title h2 {
+	height: 26px;
+	text-indent: -9999px;
+	overflow: hidden;
+	background: url(../img/index_title_bg.png) 10px -52px no-repeat;
+}
+.main .mod-recommend .mod-t-play {
+	left: 134px;
+}
+.main .mod-recommend .mod-sort-index {
+	position: absolute;
+	top: 6px;
+	right: 17px;
+	font-size: 0;
+}
+
+
+.main .mod-recommend .mod-content ol{
+	height: 440px;
+}
+.main .mod-recommend .mod-content ol li {
+	width: 333px;
+	height: 23px;
+	position: relative;
+	overflow: hidden;
+	line-height: 24px;
+	margin: 0 0 6px;
+	padding: 0 0 6px;
+	float: left;
+	border-bottom: 1px dotted #fff;
+	clear: both;
+}
+.main .mod-recommend .mod-content ol li:hover {
+	border-bottom: 1px dotted #e2e2e2;
+}
+.main .mod-recommend .mod-content ol li h5 {
+	width: 298px;
+	height: 24px;
+	float: left;
+	font-weight: normal;
+	overflow: hidden;
+	white-space: nowrap;
+	-ms-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	font-size: 14px;
+}
+.main .mod-recommend .mod-content ol li:hover .music-name a{
+	max-width: 140px;
+}
+.main .mod-recommend .mod-content ol li:hover h5{
+	max-width: 232px;
+}
+.main .mod-recommend .mod-content .music-name a {
+	display: inline-block;
+	max-width: 220px;
+	vertical-align: top;
+	-ms-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	color: #0c8f44;
+	margin: 0 6px 0 0;
+}
+.main .mod-recommend .mod-content .recommend-singer {
+	display: inline-block;
+	overflow: hidden;
+	-ms-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	height: 24px;
+	font-size: 14px;
+	max-width: 112px;
+	padding: 0 0 0 8px;
+	background: url(../img/delimiter.png)left center no-repeat;
+}
+.main .mod-recommend .list-cp {
+	display: none;
+	position: absolute;
+	top: 5px;
+	right: 0;
+	width: 142px;
+	height: 14px;
+	font-size: 0;
+	line-height: 0;
+	text-align: right;
+}
+.main .mod-recommend .mod-content ol li:hover .list-cp {
+	display: block;
+}
+.main .mod-recommend .list-cp a {
+	display: inline-block;
+	vertical-align: top;
+	zoom: 1;
+	width: 14px;
+	height: 14px;
+	margin: 0 0 0 6px;
+	line-height: 9999px;
+	overflow: hidden;
+	background: url(../img/icon_sprite.png) no-repeat;
+}
+.main .mod-recommend .list-cp a.btn-play {
+	background-position: 0 -169px;
+}
+.main .mod-recommend .list-cp a.btn-add {
+	background-position: -42px -169px;
+}
+.main .mod-recommend .list-cp a.btn-like {
+	background-position: -14px -169px;
+}
+.main .mod-recommend .list-cp a.btn-fva {
+	background-position: -71px -211px;
+}
+.main .mod-recommend .list-cp a.btn-share {
+	background-position: -28px -169px;
+}
+.main .mod-recommend .list-cp a.btn-play:hover {
+	background-position: 0 -183px;
+}
+.main .mod-recommend .list-cp a.btn-add:hover {
+	background-position: -42px -183px;
+}
+.main .mod-recommend .list-cp a.btn-like:hover {
+	background-position: -14px -183px;
+}
+.main .mod-recommend .list-cp a.btn-fva:hover {
+	background-position: -56px -211px;
+}
+.main .mod-recommend .list-cp a.btn-share:hover {
+	background-position: -28px -183px;
+}
+/*官方推荐－hot-recommend*/
+.main .hot-recommend {
+	width: 350px;
+	float: left;
+	position: relative;
+	margin: 0 0 0 -1px;
+	z-index: 2;
+}
+.main .hot-recommend em {
+	visibility: hidden;
+	width: 22px;
+	display: block;
+	float: left;
+}
+/*精选集*/
+.main .mod-speciel {
+	position: relative;
+	margin: 0 0 38px;
+}
+.main .mod-speciel .title {
+	height: 26px;
+	padding: 2px 0;
+	overflow: hidden;
+	margin: 0 0 18px;
+	border-left: 5px solid #f3508d;
+}
+.main .mod-speciel .title h2 {
+	height: 26px;
+	text-indent: -9999px;
+	overflow: hidden;
+	background: url(../img/index_title_bg.png)10px -78px no-repeat;
+}
+.main .mod-speciel .mod-content {
+	width: 700px;
+	overflow: hidden;
+}
+.main .mod-speciel .mod-content ul {
+	width: 712px;
+}
+.main .mod-speciel .mod-content ul li {
+	width: 130px;
+	height: 186px;
+	float: left;
+	margin: 0 12px 0 0;
+}
+.main .mod-speciel .mod-content .mod-cover {
+	width: 270px;
+	height: auto;
+	margin: 0 15px 0 0;
+	float: left;
+}
+.main .mod-speciel .mod-content .mod-poster {
+	display: block;
+	width: 270px;
+	height: 270px;
+}
+.main .mod-speciel .mod-content .mod-w-130 img {
+	display: block;
+	width: 130px;
+	height: 130px;
+}
+.main .mod-speciel .mod-content .mod-poster img {
+	display: block;
+	width: 270px;
+	height: 270px;
+}
+.main .mod-speciel .mod-content .mod-cover p {
+	height: 32px;
+	line-height: 16px;
+	white-space: normal;
+	margin: 0 0 6px;
+	overflow: hidden;
+}
+.main .mod-speciel .mod-content .mod-cover h5 {
+	margin: 4px 0 8px;
+}
+.main .mod-speciel .mod-content h5 {
+	font-weight: normal;
+	width: 130px;
+	height: 16px;
+	line-height: 16px;
+	overflow: hidden;
+	-ms-word-break: keep-all;
+	word-break: keep-all;
+	white-space: nowrap;
+	-ms-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+}
+.main .mod-speciel .mod-content h5 a{
+	color: #0c8f44;
+}
+.main .mod-speciel .mod-content h5 a:hover{
+	color: #05b600;
+}
+.main .mod-speciel .mod-content .mod-w-130 {
+	display: block;
+	width: 130px;
+	height: 130px;
+	margin: 0 0 6px;
+	position: static;
+}
+/*side-container 用户登录*/
+.main .side-container {
+	width: 220px;
+	float: right;
+}
+.main .side-container .mod-login {
+	height: 136px;
+	position: relative;
+	margin: 0 0 20px;
+	background: url(../img/bg_login.png) no-repeat;
+}
+.main .side-container .mod-login a {
+	display: block;
+	width: 170px;
+	height: 45px;
+	text-indent: -9999px;
+	overflow: hidden;
+	position: absolute;
+	left: 25px;
+	top: 55px;
+}
+/*排行榜*/
+.main .side-container .mod-rank {
+	position: relative;
+	border-bottom: 1px solid  #e4e4e4;
+	margin: -0px 0 20px;
+}
+.main .side-container .mod-rank .title {
+	height: 18px;
+	padding: 6px 0;
+	margin: 0 0 10px;
+}
+.main .side-container .mod-rank .title h2 {
+	height: 18px;
+	text-indent: -9999px;
+	overflow: hidden;
+	background: url(../img/index_title_bg.png) 0 -220px no-repeat;
+}
+.main .mod-rank .mod-t-play {
+	left: 65px;
+}
+.main .mod-rank .mod-content {
+	width: 220px;
+	overflow: hidden;
+}
+.main .mod-rank .mod-sort-index {
+	padding: 0 0 12px;
+	position: static;
+}
+.main .mod-rank .mod-sort-index li:first-child {
+    padding-left: 0;
+}
+.main .mod-rank-list {
+	height: 282px;
+	background: url(../img/icon_sprite.png) -166px -225px no-repeat;
+}
+.main .mod-rank-list li {
+	overflow: hidden;
+	height: 24px;
+	width: 220px;
+}
+.main .mod-rank-list li:first-child {
+	height: 51px;
+}
+.main .mod-rank-list li em {
+	visibility: hidden;
+	float: left;
+	width: 42px;
+}
+.main .mod-rank-list li h5 {
+	color: #0c8f44;
+	float: left;
+	width: 108px;
+	height: 24px;
+	line-height: 24px;
+	overflow: hidden;
+	white-space: nowrap;
+	-ms-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+}
+.main .mod-rank-list .rank-top h5 {
+	font-size: 22px;
+	color: #ff5400;
+	font-family: "Microsoft YaHei";
+	cursor: pointer;
+	height: 30px;
+}
+.main .mod-rank-list .rank-top h5 a{
+	color: #ff5400;
+}
+.main .mod-rank-list li h5:hover, .main .mod-rank-list li h5 a:hover{
+	color: #05b600;
+}
+.main .mod-rank-list li h5 a {
+	color: #0c8f44;
+	font-weight: normal;
+}
+.main .mod-rank-list li a.mod-poster{
+	width: 50px;
+	height: 50px;
+	float: left;
+	margin: 0 11px 0 0;
+	overflow: hidden;
+}
+.main .mod-rank-list .rank-top p {
+	text-align: left;
+	float: none;
+}
+.main .mod-rank-list li p {
+	float: right;
+	width: 70px;
+	text-align: right;
+	line-height: 24px;
+	height: 24px;
+	overflow: hidden;
+	white-space: nowrap;
+	-ms-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+}
+.main .mod-rank-index {
+	width: 240px;
+	height: 72px;
+	padding: 14px 0;
+	background: url(../img/bg_dot.png)0 0 repeat-x;
+}
+.main .mod-rank-index li {
+	width: 60px;
+	height: 24px;
+	line-height: 24px;
+	float: left;
+	margin: 0 20px 0 0;
+	overflow: hidden;
+}
+/*热歌排行榜*/
+.main .mod-hot-singer {
+	position: relative;
+	border-bottom: 1px solid  #e4e4e4;
+	margin: 0 0 13px;
+}
+.main .mod-hot-singer .title {
+	height: 18px;
+	padding: 6px 0;
+	margin: 0 0 13px;
+}
+.main .mod-hot-singer .title h2 {
+	height: 18px;
+	text-indent: -9999px;
+	overflow: hidden;
+	background: url(../img/index_title_bg.png)0 -202px no-repeat;
+}
+.main .mod-hot-singer .mod-more {
+	left: 81px;
+	top: 10px;
+}
+.main .mod-hot-singer .mod-content {
+	width: 220px;
+	overflow: hidden;
+}
+.main .mod-hot-singer .hot-singer-list {
+	width: 252px;
+	height: 178px;
+	overflow: hidden;
+}
+.main .mod-hot-singer .hot-singer-list li {
+	float: left;
+	width: 50px;
+	height: 90px;
+	margin: 0 34px 0 0;
+	overflow: hidden;
+}
+.main .mod-hot-singer .hot-singer-list li a {
+	display: block;
+	width: 50px;
+	height: 50px;
+	overflow: hidden;
+	margin: 0 0 6px;
+	color: #0c8f44;
+	white-space: nowrap;
+	-ms-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+}
+.main .mod-hot-singer .hot-singer-list li a:hover {
+	color: #05b600;
+}
+.main .mod-hot-singer .hot-singer-index {
+	width: 240px;
+	height: 72px;
+	padding: 14px 0;
+	background: url(../img/bg_dot.png)0 0 repeat-x;
+}
+.main .mod-hot-singer .hot-singer-index li {
+	width: 60px;
+	height: 24px;
+	line-height: 24px;
+	float: left;
+	margin: 0 20px 0 0;
+	overflow: hidden;	
+}
+/*精彩活动*/
+.main .mod-hot-event {
+	position: relative;
+	border-bottom: 1px solid  #e4e4e4;
+	margin: -0px 0 14px;
+}
+.main .mod-hot-event .title {
+	height: 18px;
+	padding: 6px 0;
+	margin: 0 0 14px;
+}
+.main .mod-hot-event .title h2 {
+	height: 18px;
+	text-indent: -9999px;
+	overflow: hidden;
+	background: url(../img/index_title_bg.png)0 -148px no-repeat;
+}
+.main .mod-hot-event .mod-content {
+	width: 220px;
+	overflow: hidden;
+	padding: 0 0 13px;
+}
+.main .mod-hot-event .mod-content ul li {
+	height: auto;
+	margin: 0 0 7px;
+}
+.main .mod-hot-event .mod-content ul li a {
+	color: #0c8f44;
+}
+/*foot*/
+.foot {
+	text-align: center;
+	line-height: 24px;
+	margin: 30px auto 10px;
+	padding-top: 10px;
+	min-width: 960px;
+	background: #f7f7f7;
+	overflow: hidden;
+	clear: both;
+	zoom: 1;
+}
+.foot .follow-on {
+	position: relative;
+	overflow: hidden;
+	width: 920px;
+	margin: 0 auto;
+	padding: 20px 0 50px 60px;
+	font-family: tahoma;
+	clear: both;
+	zoom: 1;
+}
+.foot .follow-on dl {
+	float: left;
+	text-align: left;
+	margin-right: 80px;
+	zoom: 1;
+}
+.foot .follow-on .soft-download {
+	margin-right: 80px;
+}
+.foot .follow-on dl dt {
+	font-size: 16px;
+	color: #757575;
+	font-weight: bold;
+	line-height: 30px;
+}
+.foot .follow-on dl dd {
+	line-height: 26px;
+	white-space: nowrap;
+}
+.foot .follow-on dl dd a {
+	margin-right: 15px;
+}
+.foot .follow-on .friends-link {
+	margin-right: 0;
+}
+/*visitor-cp*/
+.visitor-cp {
+	background-color: #fff;
+	width: 47px;
+	height: 106px;
+	position: fixed;
+	right: 20px;
+	bottom: 30%;
+	border-radius: 5px;
+	box-shadow: 0 0 2px #6e6e6e;
+}
+.visitor-cp button {
+	background: url(../img/frame_bg.png) no-repeat;
+	display: block;
+	text-indent: -9999px;
+	width: 37px;
+	margin: 5px;
+	border: 0;
+	overflow: hidden;
+	float: left;
+
+}
+.visitor-cp .get-top {
+	background-position: -896px -91px;
+	height: 22px;
+}
+.visitor-cp .get-top:hover {
+	background-position: -934px -91px;
+}
+.visitor-cp .get-feedback {
+	background-position: -896px -113px;
+	height: 32px;
+}
+.visitor-cp .get-feedback:hover {
+	background-position: -934px -113px;
+}
+.visitor-cp .get-bottom {
+	background-position: -896px -147px;
+	height: 22px;
+}
+.visitor-cp .get-bottom:hover {
+	background-position: -934px -147px;
+}

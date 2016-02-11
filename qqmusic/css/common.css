@@ -1,0 +1,83 @@
+.header-top .navlist a {
+	color: #b5b5b5;
+}
+.header-top .navlist .last-a {
+	border-right: 1px solid #3d3d3d;
+	padding-right: 10px;
+}
+.header-top .navlist a:hover {
+	color: #0dad51;
+}
+.main .mod-t-play {
+	width: 70px;
+	height: 30px;
+	position: absolute;
+	top: 0;
+	overflow: hidden;
+}
+.main .mod-t-play a{
+	float: left;
+	width: 30px;
+	height: 30px;
+	background: url(../img/icon_sprite.png) no-repeat;
+	overflow: hidden;
+	text-indent: -9999px;
+}
+.main .mod-t-play a.mod-play {
+	background-position: 0 -64px;
+	margin: 0 10px 0 0;
+}
+.main .mod-t-play a.mod-play:hover {
+	background-position: -30px -64px;
+}
+.main .mod-t-play a.mod-add {
+	background-position: -56px -285px;
+}
+.main .mod-t-play a.mod-add:hover{
+	background-position: -88px -285px;
+}
+.mod-sort-index {
+	position: absolute;
+	top: 6px;
+	right: 0;
+	font-size: 0;
+}
+.mod-sort-index li {
+	display: inline-block;
+	padding: 0 8px;
+	height: 18px;
+	line-height: 18px;
+	background: url(../img/line_bg.png)right 4px no-repeat;
+}
+.mod-sort-index li a {
+	font-size: 12px;
+	color: #0c8f44;
+}
+.mod-sort-index .first-current {
+	font-weight: 600;
+}
+.mod-sort-index .first-current a{
+	color: #333;
+}
+.mod-sort-index a:hover {
+	color: #05b600;
+}
+.mod-sort-index .last {
+	padding: 0 0 0 8px;
+	background: none;
+}
+.mod-more {
+	position: absolute;
+	width: 37px;
+	height: 14px;
+}
+.mod-more a {
+	display: block;
+	width: 37px;
+	height: 14px;
+	font-size: 0;
+	line-height: normal;
+	text-indent: -9999px;
+	overflow: hidden;
+	background: url(../img/index_title_bg.png) left -238px no-repeat;
+}

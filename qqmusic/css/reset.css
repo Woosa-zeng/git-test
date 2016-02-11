@@ -1,0 +1,54 @@
+body,h2,h5,ul,li,ol,p,dd,dt{
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: #fff;
+	font-size: 12px;
+	font-family: Arial,Tahoma,"hiragino sans gb",Helvetica;
+	line-height: 24px;
+	color: #8b8b8b;
+}
+li {
+	list-style: none;
+}
+img {
+	border: 0 none;
+	vertical-align: middle;
+}
+.mod-content h5 a{
+	font-size: 12px;
+}
+
+a {
+	text-decoration: none;
+
+	font-family: Arial,Tahoma,"hiragino sans gb",Helvetica;
+	color: #333;
+}
+.cma-a a {
+	color: #05b600;
+}
+.clearfix:after {
+	display: block;
+	content: "";
+	clear: both;
+	line-height: 0;
+	visibility: hidden;
+}
+input:focus {
+	outline: none;
+}
+input {
+	font-family: Arial,Tahoma,"hiragino sans gb",Helvetica;
+}
+button {
+	cursor: pointer;
+}
+
+#show{
+	display: block;
+}
+#hide{
+	display: none;
+}
