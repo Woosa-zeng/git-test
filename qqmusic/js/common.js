@@ -10,17 +10,13 @@ window.onload = function(){
     for(var i=0,len=aLi.length; i<len; i++){
         aLi[i].index = i;
         aLi[i].onmouseover = function(){
-            for(var i=0,len=aLi.length; i<len; i++){
-                aLi[i].id = '';
-            }
-            this.id = 'active';
             for(var j=0,len=aDiv.length; j<len; j++){
                 aDiv[j].id = 'hide';
             }
             aDiv[this.index].id = 'show';
         }
     }
-    menu.onmouseleave =function(){
+    menu.onmouseleave = function(){
         for(var j=0,len=aDiv.length; j<len; j++){
         aDiv[j].id = 'hide';
         }
