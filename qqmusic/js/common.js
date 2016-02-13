@@ -22,5 +22,30 @@ window.onload = function(){
         }
         aDiv[0].id = 'show';
     } 
-}
+
+
+
+};
+
+// input
+var ipt = document.querySelector('.serch-text'),
+    search = document.querySelector('.frame-search');
+
+ipt.addEventListener('click',function(){
+   search.id = 'frame-search-click';
+   ipt.removeAttribute('placeholder');
+});
+
+window.addEventListener('mousedown',function(){
+    search.id = '';
+    ipt.setAttribute('placeholder','找到好音乐');
+});
+
+
+
+
+
+
+
+
 

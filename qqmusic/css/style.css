@@ -67,24 +67,14 @@
 	height: 75px;
 	overflow: hidden;
 }
-.frame-top .main-top .frame-search {
-	position: absolute;
-	top: 38px;
-	right: -4px;
-	z-index: 2;
-	width: 228px;
-	height: 39px;
-	background: url(../img/frame_bg.png) 0 -161px no-repeat;
+.frame-top .frame-search {
+	background-position:  0 -161px;
 }
-.frame-top .main-top .frame-search input {
-    position: absolute;
-    top: 7px;
-    right: 31px;
-    width: 189px;
-    height: 24px;
-    border: 0;
+#frame-search-click {
+	background-position: -233px -161px;
+}
+.frame-top input {
     color: #515151;
-    line-height: 20px;
 }
 .frame-top .main-top li.nav-home {
 	width: 88px;	
