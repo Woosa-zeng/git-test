@@ -1,0 +1,16 @@
+ul,
+li {
+  list-style: none;
+}
+.container {
+  width: 900px;
+  margin: 0 auto;
+}
+.container li {
+  float: left;
+  margin: 10px 10px;
+}
+.container li img {
+  width: 265px;
+  height: 232px;
+}
