@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+    <link rel="stylesheet" href="domo.css">
+    <link rel="stylesheet" href="iconfont.css">
+    <style>
+    body{
+        font-family: "Microsoft YaHei",tahoma,arial,"Hiragino Sans GB","b8bf53",sans-serif;
+    }
+    ul{
+        padding-left: 0;
+    }
+    a{
+        text-decoration: none;
+
+    }
+    .container{
+        margin: 20px;
+    }
+    .dorpdown li a{
+        color: #fff;
+        margin-left: 20px;
+        font-size: 16px;
+    }
+    .dorpdown-layer li a{
+        color: #000;
+        display: inline-block;
+        width: 50px;
+        height: 25px;
+        padding: 18px 20px 5px; 
+    }
+    .dorpdown-layer li a:hover{
+        color: #f00;
+    }
+    li{
+        list-style: none;
+    }
+    .dorpdown{
+        float: left;
+        width: 200px;
+        background: #f00;
+        position: relative;
+        border: solid 1px #f00;
+        border-right: none;
+    }
+    .dorpdown-layer{
+        position: absolute;
+        left: 229px;
+    }
+    .dorpdown li{
+        color: #fff;
+        height: 50px;
+        width: 200px;
+        line-height: 50px;
+        border-bottom: dotted 1px #aaa;
+    }
+    .dorpdown li:last-child{
+        border-bottom: none;
+    }
+    .dorpdown-layer li{
+        width: 200px;
+        height: 203px;
+        background: #eee;
+        border: solid 1px #f00;
+        border-left: none;
+        display: none;
+    }
+    i{
+        float: right;
+    }
+    .cul{
+        background-color: #eee;
+    }
+    .cul a{
+        color: red !important;
+    }
+    .cul i{
+        visibility: hidden;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <ul class = "dorpdown">
+            <li class="item"><a href="#">家用电器</a><i class="icon iconfont">&#xe602;</i></li>
+            <li class="item"><a href="#">珠宝玉器</a><i class="icon iconfont">&#xe602;</i></li>
+            <li class="item"><a href="#">办公用品</a><i class="icon iconfont">&#xe602;</i></li>
+            <li class="item"><a href="#">零食小吃</a><i class="icon iconfont">&#xe602;</i></li>
+        </ul>
+        <ul class = "dorpdown-layer">
+            <li class="item">
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+                <a href="#">电视</a>
+                <a href="#">空调</a>
+                <a href="#">电视</a>
+                <a href="#">空调</a>
+                <a href="#">冰箱</a>
+                <a href="#">洗衣机</a>
+            </li>
+            <li class="item">
+                <a href="#">翡翠</a>
+                <a href="#">黄金</a>
+                <a href="#">铂金</a>
+                <a href="#">玉器</a>
+                <a href="#">翡翠</a>
+                <a href="#">黄金</a>
+                <a href="#">铂金</a>
+                <a href="#">玉器</a>
+            </li>
+            <li class="item">
+                <a href="#">鼠标</a>
+                <a href="#">键盘</a>
+                <a href="#">硬盘</a>
+                <a href="#">笔记本</a>
+                <a href="#">鼠标</a>
+                <a href="#">键盘</a>
+                <a href="#">硬盘</a>
+                <a href="#">笔记本</a>
+            </li>
+            <li class="item">
+                <a href="#">牛肉干</a>
+                <a href="#">薯条</a>
+                <a href="#">坚果</a>
+                <a href="#">虾条</a>
+                <a href="#">牛肉干</a>
+                <a href="#">薯条</a>
+                <a href="#">坚果</a>
+                <a href="#">虾条</a>
+            </li>
+        </ul>
+    </div>
+    <script>
+        $('.dorpdown .item').on('mouseenter',function(){
+            var $cur = $(this),
+                idx = $cur.prevAll().size();
+            $cur.addClass('cul').siblings().removeClass('cul');
+            // console.log(idx);
+            $('.dorpdown-layer .item').eq(idx).show().siblings().hide();
+        });
+        $('.container').on('mouseleave',function(){
+            $('.dorpdown .item').removeClass('cul');
+            $('.dorpdown-layer .item').hide();
+        })
+    </script>
+</body>
+</html>
