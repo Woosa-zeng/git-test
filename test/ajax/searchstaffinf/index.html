@@ -32,7 +32,57 @@
     <input type="text" id="staffJob"/><br>
     <button id="save">保存</button>
     <p id="createResult"></p>
+    <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script> 
     <script>
+        $(document).ready(function(){
+            $("#search").on("click",function(){
+                $.ajax({
+                    type: "GET",
+                    url: "test.php?number=" + $("#keyword").val(),
+                    dataType: "json",
+                    success: function(data){
+                        if(data.success){
+                            $("#searchResult").html(data.msg);
+                        }else{
+                            $("#searchResult").html("出现错误:" + data.msg);
+                        }
+                    },
+                    error: function(jqXHR){
+                        alert("发生错误：" + request.status);
+                    }
+                });
+            });
+
+            $("#save").on("click",function(){
+                $.ajax({
+                    type: "POST",
+                    url: "test.php",
+                    dataType: "json",
+                    data: {
+                        name: $("#staffName").val(),
+                        number: $("#staffNumber").val(),
+                        sex: $("#staffSex").val(),
+                        job: $("#staffJob").val()
+                    },
+                    success: function(data){
+                        if(data.success){
+                            $("#createResult").html(data.msg);
+                        }else{
+                            $("#createResult").html("出现错误:" + data.msg);
+                        }
+                    },
+                    error: function(jqXHR){
+                        alert("发生错误：" + request.status);
+                    }
+                });
+            });
+    });
+
+        
+
+    </script>
+
+   <!--  <script>
         document.getElementById("search").onclick = function(){
             //发送Ajax查询请求并处理
             var request = new XMLHttpRequest();
@@ -81,6 +131,6 @@
                 }
             }
         }
-    </script>
+    </script> -->
 </body>
 </html>
