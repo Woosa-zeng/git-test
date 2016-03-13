@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/common.css">
   <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
 </head>
 <body>
   <div class="frame-top">
@@ -97,32 +98,30 @@
     <div class="main-container">
       <!-- S 焦点图 -->
       <div class="mod-focus-show">
-        <a href="" class="slide-prev">上一个</a>
-        <a href="" class="slide-next">下一个</a>
-        <ul>
-           <li><a href=""><img src="./img/focus1.jpg" width="700" width="320" alt=""></a></li>
-           <li><a href=""><img src="" alt=""></a></li>
-           <li><a href=""><img src="" alt=""></a></li>
-           <li><a href=""><img src="" alt=""></a></li>
-           <li><a href=""><img src="" alt=""></a></li>
-           <li><a href=""><img src="" alt=""></a></li>
-           <li><a href=""><img src="" alt=""></a></li>
-           <li><a href=""><img src="" alt=""></a></li>
-           <li><a href=""><img src="" alt=""></a></li>
-           <li><a href=""><img src="" alt=""></a></li>
+        <a href="javascript:;" class="slide pre">上一个</a>
+        <a href="javascript:;" class="slide next">下一个</a>
+        <ul class="img-ct clearfix">
+           <li data-id=0><a href="javascript:;"><img src="./img/focus1.jpg" alt=""></a></li>
+           <li data-id=1><a href="javascript:;"><img src="./img/focus2.jpg" alt=""></a></li>
+           <li data-id=2><a href="javascript:;"><img src="./img/focus3.jpg" alt=""></a></li>
+           <li data-id=3><a href="javascript:;"><img src="./img/focus4.jpg" alt=""></a></li>
+           <li data-id=4><a href="javascript:;"><img src="./img/focus5.jpg" alt=""></a></li>
+           <li data-id=5><a href="javascript:;"><img src="./img/focus6.jpg" alt=""></a></li>
+           <li data-id=6><a href="javascript:;"><img src="./img/focus7.jpg" alt=""></a></li>
+           <li data-id=7><a href="javascript:;"><img src="./img/focus8.jpg" alt=""></a></li>
+           <li data-id=8><a href="javascript:;"><img src="./img/focus9.jpg" alt=""></a></li>
         </ul>
-        <div class="focus-switch">
-         <a href=""></a>
-         <a class="switch1" href=""></a>
-         <a href=""></a>
-         <a href=""></a>
-         <a href=""></a>
-         <a href=""></a>
-         <a href=""></a>
-         <a href=""></a>
-         <a href=""></a>
-         <a href=""></a>
-         </div>
+        <ul class="focus-switch">
+         <li class="active"></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         </ul>
       </div>
       <!-- E 焦点图 -->
       <!-- S 在线首发 -->
@@ -1025,10 +1024,11 @@
     </p>
   </div>
   <div class="visitor-cp">
-    <button class="get-top">置顶</button>
+    <a href="#"><button class="get-top">置顶</button></a>
     <button class="get-feedback">反馈</button>
     <button class="get-bottom">置底</button>
   </div>
   <script src = "js/common.js"></script>
+  <script src ="js/carousel.js"></script>
 </body>
 </html>

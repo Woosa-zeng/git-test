@@ -31,16 +31,15 @@ window.onload = function(){
 var ipt = document.querySelector('.serch-text'),
     search = document.querySelector('.frame-search');
 
-ipt.addEventListener('click',function(){
+ipt.addEventListener('focus',function(){
    search.id = 'frame-search-click';
    ipt.removeAttribute('placeholder');
 });
 
-window.addEventListener('mousedown',function(){
+ipt.addEventListener('blur',function(){
     search.id = '';
     ipt.setAttribute('placeholder','找到好音乐');
 });
-
 
 
 

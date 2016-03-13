@@ -168,89 +168,64 @@
 	height: 280px;
 	position: relative;
 	margin: 0 0 40px;
+	overflow: hidden;
 }
-.main .main-container .mod-focus-show .slide-prev {
+/*左右键开始*/
+.main .main-container .mod-focus-show .slide{
 	width: 35px;
 	height: 70px;
-	opacity: .2;
-	background: url(../img/mod_focus_show.png) -999px -999px no-repeat;
+	opacity: 0.2;
+	background: url(../img/mod_focus_show.png) no-repeat;
 	position: absolute;
 	top: 50%;
 	text-indent: -99em;
 	margin-top: -35px;
-	overflow: hidden;
-	z-index: 12;
+	z-index: 99;
+}
+.main .main-container .mod-focus-show .slide:hover{
+	opacity: 0.6;
+}
+.main .main-container .mod-focus-show .pre {
 	left: 0;
 	background-position: 0 0;
 }
-.main .main-container .mod-focus-show .slide-next {
-	width: 35px;
-	height: 70px;
-	opacity: .2;
-	background: url(../img/mod_focus_show.png) -999px -999px no-repeat;
-	position: absolute;
-	top: 50%;
-	text-indent: -99em;
-	margin-top: -35px;
-	overflow: hidden;
-	z-index: 12;
+.main .main-container .mod-focus-show .next {
 	right: 0;
 	background-position: -40px 0;
 }
-.main .main-container .mod-focus-show .slide-prev:hover {
-	opacity: .5;
-}
-.main .main-container .mod-focus-show .slide-next:hover {
-	opacity: .5;
-}	
-.main .main-container .mod-focus-show ul {
-	display: block;
-	width: 700px;
-	height: 280px;
-}
-.main .main-container .mod-focus-show ul li {
-	display: block;
+
+/*左右键结束*/
+	
+.main .main-container .mod-focus-show .img-ct {
 	position: absolute;
-	top: 0;
-	left: 0;
-	width: 700px;
-	height: 280px;
 }
-.main .main-container .mod-focus-show ul li a {
-	display: block;
+.main .main-container .mod-focus-show .img-ct li {
+	float: left;
+}
+.main .main-container .mod-focus-show .img-ct li img {
 	width: 700px;
 	height: 280px;
 }
 .main .mod-focus-show .focus-switch {
-	font-style: 0;
 	position: absolute;
 	bottom: 10px;
 	left: 50%;
-	margin-left: -369px;
-	line-height: 0;
-	width: 738px;
-	height: 10px;
-	text-align: center;
-	z-index: 11;
-	overflow: hidden;
+	transform: translateX(-50%);
 }
-.main .mod-focus-show .focus-switch a.switch1 {
+.main .mod-focus-show .focus-switch li.active{
 	opacity: 1;
 }
-.main .mod-focus-show .focus-switch a{
+.main .mod-focus-show .focus-switch li{
 	display: inline-block;
+	cursor: pointer;
 	width: 10px;
 	height: 10px;
 	margin: 0 4px;
 	background-color: #fff;
-	font-style: 0;
-	overflow: hidden;
 	border-radius: 100%;
 	opacity: .4;
 }
-.main .mod-focus-show .focus-switch a:hover {
-	opacity: 1;
-}
+
 /*在线首发*/
 .main .mod-first {
 	width: 700px;
