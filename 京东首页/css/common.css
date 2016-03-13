@@ -63,7 +63,7 @@ a:hover{
     font-family: "simsun";
     cursor: pointer;
 }
-#slider-page-f:hover #slider-page{
+.ad-c:hover #slider-page{
 	display: block;
 }
 .sd-2015-icon{

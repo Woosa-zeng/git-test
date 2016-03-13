@@ -7,6 +7,8 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/common.css">
 	<link href="./favicon.ico" rel="icon" type="image/x-icon"/>
+	<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+	<script src="js/carousel-fade-jquery.js"></script>
 </head>
 <body>
 	<div class="header">
@@ -500,24 +502,30 @@
 	</div>
 	<div class="focus clr">
 		<div class="focus-ad">
-			<div class="ad-c clr" id="slider-page-f">
+			<div class="ad-c">
+				<ul class="img-ct clr">
+					<li data-id="0"><a href="javascript:;"><img src="./img/ad0.jpg" alt=""></a></li>
+					<li data-id="1"><a href="javascript:;"><img src="./img/ad1.jpg" alt=""></a></li>
+					<li data-id="2"><a href="javascript:;"><img src="./img/ad2.jpg" alt=""></a></li>
+					<li data-id="3"><a href="javascript:;"><img src="./img/ad3.jpg" alt=""></a></li>
+					<li data-id="4"><a href="javascript:;"><img src="./img/ad4.jpg" alt=""></a></li>
+					<li data-id="5"><a href="javascript:;"><img src="./img/ad5.jpg" alt=""></a></li>
+				</ul>
 				<i class="but-l" id="slider-page">&lt;</i>
 				<i class="but-r" id="slider-page">&gt;</i>
-				<div class="but-page">
-					<ul>
-						<li>1</li>
-						<li>2</li>
-						<li>3</li>
-						<li>4</li>
-						<li>5</li>
-						<li>6</li>
-					</ul>
-				</div>	
+				<ul class="but-page">
+					<li class="active">1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+					<li>5</li>
+					<li>6</li>
+				</ul>
 			</div>
 		</div>
 		<div class="focus-extra">
 			<div class="news">
-				<div class="mt">
+				<div class="mt clr">
 					<h2>京东快报</h2>
 					<div class="extra">
 						<a href="">更多 &gt;</a>

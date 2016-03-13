@@ -676,6 +676,8 @@
 .focus{
 	width: 1210px;
 	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
 }
 .focus>.focus-ad{
 	float: left;
@@ -690,7 +692,21 @@
 	height: 466px;
 	cursor: pointer;
 	margin: 12px 0 0 220px;
-	background: url(../img/ad0.jpg) no-repeat;
+}
+.focus>.focus-ad>.ad-c .img-ct{
+	position: absolute;
+	width: 730px;
+	height: 454px;
+	overflow: hidden;
+}
+.focus>.focus-ad>.ad-c .img-ct li{
+	float: left;
+	transition: all .5s;
+}
+.focus>.focus-ad>.ad-c .img-ct li img{
+	width: 730px;
+	height: 454px;
+
 }
 .focus>.focus-ad .but-l{
 	left: 220px;
@@ -698,7 +714,7 @@
 .focus>.focus-ad .but-r{
 	right: 260px;
 }
-.focus>.focus-ad .but-page ul{
+.focus>.focus-ad .but-page{
 	position: absolute;
 	top: 440px;
 	left: 210px;
@@ -706,7 +722,7 @@
 	text-align: center;
 	z-index: 3;
 }
-.focus>.focus-ad .but-page li:nth-child(1){
+.focus>.focus-ad .but-page .active{
 	background: #b61b1f;
 }
 .focus>.focus-ad .but-page li{
@@ -720,14 +736,12 @@
 	cursor: pointer;
 	color: #fff;
 }
-.focus>.focus-ad .but-page li:hover{
-	background: #b61b1f;
-}
+
+// 轮播图结束
+
 .focus>.focus-extra{
-	position: relative;
-	right: 0;
-	margin: 0 auto;
-	z-index: 1;
+    position: relative;
+    z-index: 1;
 }
 .focus>.focus-extra>.news{
 	width: 248px;
@@ -738,6 +752,7 @@
 	border: 1px solid #e4e4e4;
 	border-bottom: 0;
 	background: rgb(255,255,255);
+	z-index: 5;
 }
 .focus>.focus-extra .mt{
 	padding: 0 15px;
@@ -770,6 +785,7 @@
 }
 .focus>.focus-extra .life-serv{
 	/*float: right;*/
+	z-index: 5;
 	position: absolute;
 	right: 0;
 	width: 248px;
