@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>fisvue</title>
+    <script src="js/demo1/vue.min.js"></script>
+  </head>
+  <body>
+
+    <div id="app">
+        <span>This will never change: {{ msg }}</span>
+    </div>
+
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                msg: 'abc'
+            }
+        });
+    </script>
+  </body>
+</html>

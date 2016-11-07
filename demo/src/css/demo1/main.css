@@ -1,0 +1,119 @@
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+p,
+ul,
+ol,
+li,
+a,
+span {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 12px;
+  font-weight: bold;
+}
+ul,
+li {
+  list-style: none;
+}
+html,
+body {
+  font: normal 12px/1.5 'Microsoft Yahei';
+  background: #fff;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: normal;
+}
+.clearFix:after {
+  clear: both;
+  content: '.';
+  height: 0;
+  display: block;
+  visibility: hidden;
+}
+input,
+a,
+:focus {
+  outline: none;
+  resize: none;
+}
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+  font-family: 'Microsoft Yahei';
+}
+body,
+html {
+  height: 100%;
+  background: red;
+  color: #fff;
+}
+.wrap h4 {
+  font-size: 18px;
+  text-align: center;
+  margin: 20px auto;
+}
+.wrap ul {
+  width: 90%;
+  margin: 0 auto;
+}
+.wrap ul li {
+  height: 30px;
+  font-size: 16px;
+  line-height: 30px;
+  display: box;
+  display: -webkit-box;
+  box-pack: center;
+  -webkit-box-pack: center;
+  box-align: center;
+  -webkit-box-align: center;
+}
+.wrap ul li.name1 {
+  background: url('../../images/demo1/p/1.png?__sprite?__inline') left center no-repeat;
+  padding-left: 15px;
+}
+.wrap ul li.name2 {
+  background: url('../../images/demo1/p/2.png?__sprite?__inline') left center no-repeat;
+  padding-left: 15px;
+}
+.wrap ul li.name3 {
+  background: url('../../images/demo1/p/3.png?__sprite?__inline') left center no-repeat;
+  padding-left: 15px;
+}
+.wrap ul li.name4 {
+  background: url('../../images/demo1/p/4.png?__sprite?__inline') left center no-repeat;
+  padding-left: 15px;
+}
+.wrap ul li.name5 {
+  background: url('../../images/demo1/p/5.png?__sprite?__inline') left center no-repeat;
+  padding-left: 15px;
+}
+.wrap ul li b {
+  box-flex: 1;
+  -webkit-box-flex: 1;
+  display: block;
+  border-top: 2px dotted #fff;
+  height: 0;
+  margin: 0 10px;
+}
+.wrap p {
+  text-align: right;
+  margin-right: 20px;
+  font-size: 16px;
+}
