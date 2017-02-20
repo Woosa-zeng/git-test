@@ -60,8 +60,8 @@ fis.match('*.css', {
 fis.match('*.{js,css,png}', {
   useHash: true
 });
-//配置demo1环境
-fis.media('demo1').match('*',{
+//配置demo环境
+fis.media('demo').match('*',{
   useHash:false,
   optimizer:null,
   useSprite:false,
@@ -69,7 +69,7 @@ fis.media('demo1').match('*',{
   domain:false
 });
 
-//配置debug1环境
-// fis.media('debug1').match('*',{
+//配置debug环境
+// fis.media('debug').match('*',{
 
 // });

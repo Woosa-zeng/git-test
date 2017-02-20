@@ -21,14 +21,14 @@ var reportOptions = {
 
 //mac下 ; 分隔   win下 & 分隔
 //启动demo环境 
-var demoExec = 'fis3 server clean ; fis3 release demo1 ; fis3 server start -p '+ abc.port +' ; fis3 release demo1 -wL';
-var demoExecWin = 'fis3 server clean & fis3 release demo1 & fis3 server start -p '+ abc.port +' & fis3 release demo1 -wL';
+var demoExec = 'fis3 server clean ; fis3 release demo ; fis3 server start -p '+ abc.port +' ; fis3 release demo1 -wL';
+var demoExecWin = 'fis3 server clean & fis3 release demo & fis3 server start -p '+ abc.port +' & fis3 release demo1 -wL';
 //启动debug环境
-var debugExec = 'fis3 server clean ; fis3 release debug1 ; fis3 server start -p '+ abc.port +' ; fis3 release debug1 -wL';
-var debugExecWin = 'fis3 server clean & fis3 release debug1 & fis3 server start -p '+ abc.port +' & fis3 release debug1 -wL';
+var debugExec = 'fis3 server clean ; fis3 release debug ; fis3 server start -p '+ abc.port +' ; fis3 release debug1 -wL';
+var debugExecWin = 'fis3 server clean & fis3 release debug & fis3 server start -p '+ abc.port +' & fis3 release debug1 -wL';
 var platform = os.type();
 
-gulp.task('demo1',function(cb){
+gulp.task('demo',function(cb){
 	//判断是win还是mac
 	var _exec = platform == 'Windows_NT' ? demoExecWin : demoExec;
 	var ls = process.exec(_exec, function(stdout,stderr){
@@ -46,7 +46,7 @@ gulp.task('demo1',function(cb){
 });
 
 // debug环境
-gulp.task('debug1', function(cb){
+gulp.task('debug', function(cb){
 	var _exec = platform == 'Windows_NT' ? debugExecWin : debugExec;
 	var ls = process.exec(_exec, function(stdout,stderr){
 		cb();
